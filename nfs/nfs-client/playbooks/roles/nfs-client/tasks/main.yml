@@ -5,4 +5,4 @@
   file: path=/nfs state=directory mode=777 owner=root group=root
 
 - name: set mountpoints
-  mount: name=/nfs src="192.168.33.10:/share" fstype=nfs opts=defaults,nobootwait dump=0 passno=2 state=mounted
+  mount: name=/nfs src="192.168.1.51:/test" fstype=nfs opts=defaults,nobootwait dump=0 passno=2 state=mounted

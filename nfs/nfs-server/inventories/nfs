@@ -1,6 +1,1 @@
-[nfs_server]
-10.0.0.1
-
-[nfs_clients]
-10.0.0.2
-10.0.0.3
+humhum ansible_port=10023 ansible_host=83.142.240.8 ansible_user=root
