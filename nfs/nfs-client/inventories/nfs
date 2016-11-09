@@ -1,1 +1,1 @@
-humhum ansible_port=10023 ansible_host=83.142.240.8 ansible_user=root
+humhum ansible_port=22 ansible_host=zentyal ansible_user=eneko
