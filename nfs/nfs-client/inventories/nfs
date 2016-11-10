@@ -1,1 +1,1 @@
-humhum ansible_port=22 ansible_host=zentyal ansible_user=eneko
+zentyal ansible_port=22 ansible_host=zentyal ansible_user=eneko
