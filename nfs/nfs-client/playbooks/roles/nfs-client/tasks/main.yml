@@ -5,4 +5,4 @@
   file: path=/nfs state=directory mode=777 owner=root group=root
 
 - name: set mountpoints
-  mount: name=/home/owncloud src="192.168.1.70:/var/owncloud/data" fstype=nfs opts=defaults dump=0 passno=2 state=mounted
+  mount: name=/home/owncloud src="192.168.5.70:/var/owncloud/data" fstype=nfs opts=defaults dump=0 passno=2 state=mounted
