@@ -11,10 +11,15 @@ It uses Ansible for provisioning and Vargrant for develoment.
 
 ###How to use it
 
-From the nfs folder (any other by adjusting the path)
+1. Setup your inventory accordingly to [http://docs.ansible.com/ansible/intro_inventory.html#inventory]
 
-- ansible-playbook -vvvv -i nfs-server/inventories/nfs nfs-server/playbooks/nfs-server.yml
+Current inventory defines two hosts humhum and owncloud
 
+
+2. From the nfs folder (any other by adjusting the path)
+```
+ansible-playbook -vvvv -i nfs-server/inventories/nfs nfs-server/playbooks/nfs-server.yml
+```
 ##NFS client
 
 - Install and setup a nfs client in the inventory host
@@ -22,9 +27,16 @@ From the nfs folder (any other by adjusting the path)
 
 ###How to use it
 
-From the nfs folder (any other by adjusting the path)
+1. Setup your inventory accordingly to [http://docs.ansible.com/ansible/intro_inventory.html#inventory]
 
+Current inventory defines two hosts humhum and owncloud
+
+
+2. From the nfs folder (any other by adjusting the path)
+```
 - ansible-playbook -vvvv -i nfs-client/inventories/nfs nfs-client/playbooks/nfs-client.yml
+```
+##References
 
 
 
