@@ -1,8 +1,17 @@
-- name: Ensure NFS common is installed.
+- name: ensure NFS common is installed.
   apt: name=nfs-common state=installed update_cache=yes
 
-- name: Create mountable dir
+- name: create mountable dir
   file: path=/nfs state=directory mode=777 owner=root group=root
 
 - name: set mountpoints
   mount: name=/home/owncloud src="192.168.5.70:/var/owncloud/data" fstype=nfs opts=defaults dump=0 passno=2 state=mounted
+
+- name: users owncloud directory
+  file: src=/home/owncloud/{{item.uuid}}/files dest=/home/{{item.username}}/owncloud state=link mode=700 owner={{item.username}} group="domain users" force=yes
+  with_items:
+      - { username: 'efb08f', uuid: '7CB05C57-47E1-41F0-B181-C003D8820CB7' }
+
+
+
+

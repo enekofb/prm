@@ -33,7 +33,7 @@ Current inventory defines two hosts humhum and owncloud
 
 
 2. From the nfs folder (any other by adjusting the path)
-```
+``` dis
 - ansible-playbook -vvvv -i nfs-client/inventories/nfs nfs-client/playbooks/nfs-client.yml
 ```
 ##References
