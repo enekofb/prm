@@ -19,3 +19,6 @@
 
  - name: restart nfs server
    service: name=nfs-kernel-server state=restarted
+
+ - name: owncloud synchronizer
+   cron: name="owncloud-synchronizer" minute="*/5" job="sudo -u www-data php /var/www/html/occ files:scan --all > /var/log/owncloud-syncronizer.log"
